@@ -46,7 +46,7 @@ public class DOHamburgerButton: UIButton {
         addTargets()
     }
     
-    override init(frame: CGRect) {
+    override public required init(frame: CGRect) {
         super.init(frame: frame)
         createLayers()
         addTargets()
