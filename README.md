@@ -1,4 +1,9 @@
 # DOHamburgerButton
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods Version](https://img.shields.io/cocoapods/v/DOHamburgerButton.svg?style=flat)](http://cocoadocs.org/pods/DOHamburgerButton)
+[![Platform](https://img.shields.io/cocoapods/p/DOFavoriteButton.svg?style=flat)](http://cocoapods.org/pods/DOFavoriteButton)
+[![License](https://img.shields.io/cocoapods/l/DOFavoriteButton.svg?style=flat)](https://github.com/okmr-d/DOFavoriteButton/blob/master/LICENSE)
+
 Animated Hamburger Button written in Swift
 
 ![Demo](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOHamburgerButton/demo.gif)
@@ -8,8 +13,14 @@ Animated Hamburger Button written in Swift
 * Swift 1.2
 
 ## Installation
+#### Carthage
+Add the following line to your `Cartfile`:
+```
+github "okmr-d/DOHamburgerButton"
+```
+
 #### CocoaPods
-Add the following line to your Podfile:
+Add the following line to your `Podfile`:
 ```
 pod 'DOHamburgerButton'
 ```
