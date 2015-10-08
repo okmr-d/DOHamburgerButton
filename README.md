@@ -10,7 +10,7 @@ Animated Hamburger Button written in Swift
 
 ## Requirements
 * iOS 7.0+
-* Swift 1.2
+* Swift 2.0
 
 ## Installation
 #### Carthage
