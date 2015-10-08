@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DOHamburgerButton
 
 class ViewController: UIViewController {
 

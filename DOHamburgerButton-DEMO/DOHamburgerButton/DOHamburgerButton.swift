@@ -40,7 +40,7 @@ public class DOHamburgerButton: UIButton {
         }
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         createLayers()
         addTargets()
