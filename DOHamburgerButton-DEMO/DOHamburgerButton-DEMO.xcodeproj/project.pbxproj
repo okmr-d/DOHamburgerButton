@@ -15,6 +15,7 @@
 		4FF3574D1B61390A00B7C7B1 /* DOHamburgerButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF357361B61390A00B7C7B1 /* DOHamburgerButton.framework */; };
 		4FF3574E1B61390A00B7C7B1 /* DOHamburgerButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF357361B61390A00B7C7B1 /* DOHamburgerButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FF357BB1B6142B700B7C7B1 /* DOHamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF357BA1B6142B700B7C7B1 /* DOHamburgerButton.swift */; };
+		BB77F7B41D79AE1400327520 /* DOHamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF357BA1B6142B700B7C7B1 /* DOHamburgerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -198,7 +199,9 @@
 		4F1BE17B1B59655000E4BFB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Daiki Okumura";
 				TargetAttributes = {
 					4F1BE1821B59655000E4BFB3 = {
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F1BE18B1B59655000E4BFB3 /* ViewController.swift in Sources */,
+				BB77F7B41D79AE1400327520 /* DOHamburgerButton.swift in Sources */,
 				4F1BE1891B59655000E4BFB3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +321,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -386,6 +391,7 @@
 				INFOPLIST_FILE = "DOHamburgerButton-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,6 +403,7 @@
 				INFOPLIST_FILE = "DOHamburgerButton-DEMO/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -417,6 +424,7 @@
 				INFOPLIST_FILE = DOHamburgerButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -437,6 +445,7 @@
 				INFOPLIST_FILE = DOHamburgerButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.devlog.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
