@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let frame = CGRectMake(self.view.frame.width / 2 - 22, self.view.frame.height / 3 - 22, 44, 44)
         let button = DOHamburgerButton(frame: frame)
         button.color = UIColor.whiteColor()
-        button.addTarget(self, action: Selector("tapped:"), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.tapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
     }
 

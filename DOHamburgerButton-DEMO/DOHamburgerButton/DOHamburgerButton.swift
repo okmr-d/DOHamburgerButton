@@ -40,7 +40,7 @@ public class DOHamburgerButton: UIButton {
         }
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         createLayers()
         addTargets()
@@ -173,11 +173,11 @@ public class DOHamburgerButton: UIButton {
     }
     
     private func addTargets() {
-        addTarget(self, action: "touchDown:", forControlEvents: UIControlEvents.TouchDown)
-        addTarget(self, action: "touchUpInside:", forControlEvents: UIControlEvents.TouchUpInside)
-        addTarget(self, action: "touchDragExit:", forControlEvents: UIControlEvents.TouchDragExit)
-        addTarget(self, action: "touchDragEnter:", forControlEvents: UIControlEvents.TouchDragEnter)
-        addTarget(self, action: "touchCancel:", forControlEvents: UIControlEvents.TouchCancel)
+        addTarget(self, action: #selector(DOHamburgerButton.touchDown(_:)), forControlEvents: UIControlEvents.TouchDown)
+        addTarget(self, action: #selector(DOHamburgerButton.touchUpInside(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        addTarget(self, action: #selector(DOHamburgerButton.touchDragExit(_:)), forControlEvents: UIControlEvents.TouchDragExit)
+        addTarget(self, action: #selector(DOHamburgerButton.touchDragEnter(_:)), forControlEvents: UIControlEvents.TouchDragEnter)
+        addTarget(self, action: #selector(DOHamburgerButton.touchCancel(_:)), forControlEvents: UIControlEvents.TouchCancel)
     }
     
     func touchDown(sender: DOHamburgerButton) {
