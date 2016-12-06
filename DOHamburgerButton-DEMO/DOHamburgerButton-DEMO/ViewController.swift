@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DOHamburgerButton
 
 class ViewController: UIViewController {
 
@@ -14,10 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let frame = CGRectMake(self.view.frame.width / 2 - 22, self.view.frame.height / 3 - 22, 44, 44)
+        let frame = CGRect(x: self.view.frame.width / 2 - 22, y: self.view.frame.height / 3 - 22, width: 44, height: 44)
         let button = DOHamburgerButton(frame: frame)
-        button.color = UIColor.whiteColor()
-        button.addTarget(self, action: Selector("tapped:"), forControlEvents: UIControlEvents.TouchUpInside)
+        button.color = UIColor.white
+        
+        button.addTarget(self, action: #selector(self.tapped(_:)) ,for: UIControlEvents.touchUpInside)
         self.view.addSubview(button)
     }
 
@@ -26,8 +28,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapped(sender: DOHamburgerButton) {
-        if sender.selected {
+    @IBAction func tapped(_ sender: DOHamburgerButton) {
+        if sender.isSelected {
             sender.deselect()
         } else {
             sender.select()
