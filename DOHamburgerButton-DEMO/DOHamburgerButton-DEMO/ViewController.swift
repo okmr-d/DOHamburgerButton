@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let frame = CGRectMake(self.view.frame.width / 2 - 22, self.view.frame.height / 3 - 22, 44, 44)
+        let frame = CGRect(x: self.view.frame.width / 2 - 22, y: self.view.frame.height / 3 - 22, width: 44, height: 44)
         let button = DOHamburgerButton(frame: frame)
         button.color = UIColor.whiteColor()
         button.addTarget(self, action: Selector("tapped:"), forControlEvents: UIControlEvents.TouchUpInside)
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapped(sender: DOHamburgerButton) {
+    @IBAction func tapped(_ sender: DOHamburgerButton) {
         if sender.selected {
             sender.deselect()
         } else {

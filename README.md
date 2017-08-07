@@ -9,8 +9,8 @@ Animated Hamburger Button written in Swift
 ![Demo](https://raw.githubusercontent.com/okmr-d/okmr-d.github.io/master/img/DOHamburgerButton/demo.gif)
 
 ## Requirements
-* iOS 7.0+
-* Swift 1.2
+* iOS 8.0+
+* Swift 3.1
 
 ## Installation
 #### Carthage
